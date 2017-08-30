@@ -17,8 +17,8 @@
 .tour-container p {
     min-height: 120px
 }
-.about-rows:after,
-.subscribe-form:after {
+.about_page-rows:after,
+.getintouch_page-form:after {
     clear: both
 }
 .iPhone-slider,
@@ -465,6 +465,7 @@ html {
     width: 0
 }
 .appStore,
+.playStore,
 .logo,
 .share {
     position: fixed
@@ -511,8 +512,8 @@ h5 {
 }
 .logo {
     z-index: 999;
-  top: 19px;
-  left: 19px;
+  top: 25px;
+  left: 30px;
     cursor: pointer
 }
 .share {
@@ -544,7 +545,7 @@ only screen and (min-resolution: 2dppx) {
         background-size: 80px 80px
     }
 }
-/*share buttons on top facebook and twitter
+
 .share-item a:active {
     -webkit-transform: scale(.9);
     -ms-transform: scale(.9);
@@ -567,13 +568,23 @@ only screen and (min-resolution: 2dppx) {
 }
 .appStore {
     z-index: 999;
-    bottom: 19px;
-    left: 19px;
+    bottom:32px;
+    right: 220px;
     width: 180px;
     height: 54px;
-    background: url(/static/img/appstore.png)no-repeat;
+    background: url(stuff/appstore_logo.png)no-repeat;
     background-size: contain 
-}*/
+}
+.playStore {
+    z-index: 999;
+    bottom: 30px;
+    right:30px;
+    width: 180px;
+    height: 54px;
+    background: url(stuff/playstore_logo.png)no-repeat;
+    background-size: contain 
+}
+
 
 
 slider page gurinchi manaki avvasaram le
@@ -754,6 +765,7 @@ slider page gurinchi manaki avvasaram le
 .iPhone-shadow {
     position: absolute;
     top: 0
+
 }
 .iPhone._hidden {
     -webkit-transform: translateY(-250%);
@@ -762,14 +774,14 @@ slider page gurinchi manaki avvasaram le
 }
 .iPhone__img {
     display: block;
-    width: 100%
+    width: 100%;
 }
 .iPhone__cover {
     position: relative;
     z-index: 1
 }
 .iPhone ._draggable {
-    width: auto!important;
+    width: auto !important;
     left: 0;
     margin: 0;
     -webkit-transform-origin: 50%;
@@ -902,7 +914,7 @@ only screen and (min-resolution: 2dppx) {
     width: 100%
 }
 .iPhone-download-hover {
-    font-size: 60px;
+    font-size: 50px;
     display: block;
     opacity: 0;
     filter: alpha(Opacity=0);
@@ -911,12 +923,8 @@ only screen and (min-resolution: 2dppx) {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-image: url();
-
-
-
-
-
+    background-image: url(stuff/iphone_bg.png);
+    padding-top: 10px;
     transition: opacity .5s cubic-bezier(.23, 1, .32, 1);
     -webkit-font-smoothing: antialiased;
     text-decoration: none
@@ -924,19 +932,19 @@ only screen and (min-resolution: 2dppx) {
 .iPhone-download-hover .iPhone-download-hover-scaler {
     -webkit-transform-origin: top;
     -ms-transform-origin: top;
-    transform-origin: top
+    transform-origin: top;
 }
 .iPhone-download-hover .striped-button {
     display: block;
     width: 67%;
-    height: 26.5%;
-    background-image: url();
+    height: 25%;
+    background-image: url(stuff/iphone_frame.png);
     background-repeat: no-repeat;
-    background-size: 100%;
-    font-size: 1em;
+    background-size: 75%;
+    font-size: 0.6em;
     text-decoration: none;
     color: #90c8b9;
-    margin: 31% auto 19%;
+    margin: 30% auto 25%;
     text-align: center;
     line-height: .83em;
     padding-top: 8%
@@ -2094,68 +2102,8 @@ only screen and (min-resolution: 2dppx) {
     left: 0;
     margin-top: -310px
 }
-.about-parallax {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0
-}
-.about-parallax-item {
-    position: absolute;
-    transition: all .5s ease-out .4s;
-    opacity: 0;
-    filter: alpha(Opacity=0)
-}
-.about-parallax-item._1 {
-    bottom: -20%;
-    left: 20%;
-    max-width: 200px
-}
-.about-parallax-item._2 {
-    bottom: -20%;
-    left: 8%;
-    max-width: 160px
-}
-.about-parallax-item._3 {
-    bottom: -20%;
-    left: 18%;
-    max-width: 120px
-}
-.about-parallax-item._4 {
-    bottom: -20%;
-    right: 16%;
-    max-width: 170px
-}
-.about-parallax-item._5 {
-    bottom: -20%;
-    right: 8%;
-    max-width: 120px
-}
-.about-parallax-item._6 {
-    bottom: -20%;
-    right: 14%;
-    max-width: 180px
-}
-.about-parallax-item._moveDown {
-    bottom: 130%
-}
-@media screen and (max-width: 1280px) {
-    .about-parallax-item {
-        -webkit-transform: scale(.7);
-        -ms-transform: scale(.7);
-        transform: scale(.7)
-    }
-    .about-parallax-item._1 {
-        left: 14%
-    }
-    .about-parallax-item._2 {
-        left: 1%
-    }
-    .about-parallax-item._3 {
-        left: 4%
-    }
-}
+
+
 .about-title {
     position: relative;
     margin: 35px 0 0;
@@ -2206,17 +2154,7 @@ only screen and (min-resolution: 2dppx) {
         background-size: 350px 15px
     }
 }
-.about-rows {
-    max-width: 840px;
-    width: 100%;
-    margin: auto;
-    font-size: 0
-}
-.about-rows:after,
-.about-rows:before {
-    content: " ";
-    display: table
-}
+
 .subscribe-title:after,
 .subscribe-title:before {
     background-repeat: no-repeat;
